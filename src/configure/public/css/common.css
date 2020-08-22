@@ -1,3 +1,7 @@
+html {
+    color: #4A4A4A;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -19,6 +23,7 @@ header > .title {
 .contents {
     background: #ffffff;
     flex: 1;
+    padding: 12px;
 }
 
 footer {
