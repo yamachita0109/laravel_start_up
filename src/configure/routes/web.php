@@ -17,5 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// ログイン画面
+// ログイン
 Route::get('/login', 'LoginController@index');
+Route::post('/login', 'LoginController@authentication');

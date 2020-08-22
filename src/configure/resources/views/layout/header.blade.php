@@ -1,5 +1,5 @@
 @section('header')
 <header>
-    <div class="title">ヘッダー</div>
+    <div class="title">Header</div>
 </header>
 @endsection

@@ -10,11 +10,12 @@ Laravel Framework 7.25.0
 https://readouble.com/laravel/7.x/ja/
 ```
 
-NextTask
+## Document
 
-- MVC
-- DB
-https://www.yoheim.net/blog.php?q=20180506
+https://readouble.com/laravel/7.x/ja/
+
+## NextTask
+
 - Authentication
 https://qiita.com/hot_study_man/items/c7e081d51ec29272c326
 - ヘッドレスCMS

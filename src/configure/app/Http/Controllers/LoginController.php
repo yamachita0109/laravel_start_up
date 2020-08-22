@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Model\Login\LoginInterface;
+use Illuminate\Support\Facades\Log;
 
 class LoginController extends Controller
 {
@@ -16,9 +17,18 @@ class LoginController extends Controller
 
     public function index () 
     {
-        $hello = $this->model->get();
-        $hello_array = ['Hello', 'こんにちは', 'ニーハオ'];
+        $test = $this->model->get();
 
-        return view('login', compact('hello', 'hello_array'));
+        return view('login', compact('test'));
+    }
+
+    public function authentication(Request $request)
+    {
+        $email = $request->input('email');
+        $name = $request->input('password');
+
+        // TODO Validation
+
+        return view('login', compact('test'));
     }
 }
