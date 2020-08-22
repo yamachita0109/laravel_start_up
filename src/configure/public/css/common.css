@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #607D8B;
+    color: #ffffff;
+    height: 64px;
+    padding: 4px 16px;
+}
+
+header > .title {
+    font-size: 1.25rem;
+}
+
+.contents {
+    background: #ffffff;
+    flex: 1;
+}
+
+footer {
+    background: #607D8B;
+    color: #ffffff;
+    height: 24px;
+    padding: 6px 16px;
+}

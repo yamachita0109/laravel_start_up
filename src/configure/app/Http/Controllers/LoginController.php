@@ -19,6 +19,6 @@ class LoginController extends Controller
         $hello = $this->model->get();
         $hello_array = ['Hello', 'こんにちは', 'ニーハオ'];
 
-        return view('index', compact('hello', 'hello_array'));
+        return view('login', compact('hello', 'hello_array'));
     }
 }
