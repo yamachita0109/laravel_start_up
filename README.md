@@ -7,6 +7,7 @@ $ docker-compose exec php bash
 $ composer create-project laravel/laravel configure
 $ php artisan -V
 Laravel Framework 7.25.0
+https://readouble.com/laravel/7.x/ja/
 ```
 
 NextTask

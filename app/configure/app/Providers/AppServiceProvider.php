@@ -13,7 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(
+            'App\Model\Login\LoginInterface',
+            'App\Model\Login\LoginModel'
+        );
     }
 
     /**
