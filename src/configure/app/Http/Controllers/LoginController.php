@@ -27,9 +27,15 @@ class LoginController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('dashboard');
+            return redirect()->intended('home');
         }
         $message = 'Login Failed';
         return view('login', compact('message'));
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->intended('login');
     }
 }

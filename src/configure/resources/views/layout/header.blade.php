@@ -1,5 +1,13 @@
 @section('header')
 <header>
-    <div class="title">Header</div>
+    <span class="title">
+        Header
+    </span>
+    @auth
+        <form method="POST" action="/logout">
+            @csrf
+            <button type="submit">Logout</button>
+        </form>
+    @endauth
 </header>
 @endsection

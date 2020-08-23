@@ -17,6 +17,15 @@ https://readouble.com/laravel/7.x/ja/
 
 https://readouble.com/laravel/7.x/ja/authentication.html
 
+※ Default Authentication
+Add `Auth::routes();` web.php
+
+## Connect DB
+
+```
+$ docker exec -it db-host bash
+$ mysql -u root -p
+```
 
 ## NextTask
 

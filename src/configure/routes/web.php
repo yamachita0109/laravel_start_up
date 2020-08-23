@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// ログイン
-Route::get('/login', 'LoginController@index');
+// Login
+Route::get('/login', 'LoginController@index')->name('login');
 Route::post('/login', 'LoginController@authenticate');
+Route::post('/logout', 'LoginController@logout');
+
+// HOME
+Route::get('/home', 'HomeController@index')->name('home');
+
+// Auth::routes();
