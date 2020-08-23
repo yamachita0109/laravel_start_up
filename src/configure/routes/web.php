@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 // ログイン
 Route::get('/login', 'LoginController@index');
-Route::post('/login', 'LoginController@authentication');
+Route::post('/login', 'LoginController@authenticate');

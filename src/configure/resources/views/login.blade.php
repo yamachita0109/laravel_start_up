@@ -10,6 +10,7 @@
 @section('content')
     <form method="POST">
         @csrf
+        <p>{{ $message ?? '' }}</p>
         <div>
             <label>email</label>
             <input type="email" name="email"/>
@@ -20,7 +21,6 @@
         </div>
         <button type="submit">Login</button>
     </form>
-    <p>{{ $test }}</p>
 @endsection
  
 @include('layout.footer')

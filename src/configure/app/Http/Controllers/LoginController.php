@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Model\Login\LoginInterface;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
 class LoginController extends Controller
@@ -17,18 +18,18 @@ class LoginController extends Controller
 
     public function index () 
     {
-        $test = $this->model->get();
-
-        return view('login', compact('test'));
+        // $test = $this->model->get();
+        return view('login');
     }
 
-    public function authentication(Request $request)
+    public function authenticate(Request $request)
     {
-        $email = $request->input('email');
-        $name = $request->input('password');
+        $credentials = $request->only('email', 'password');
 
-        // TODO Validation
-
-        return view('login', compact('test'));
+        if (Auth::attempt($credentials)) {
+            return redirect()->intended('dashboard');
+        }
+        $message = 'Login Failed';
+        return view('login', compact('message'));
     }
 }
