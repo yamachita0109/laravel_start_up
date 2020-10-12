@@ -1,4 +1,4 @@
-# laravel_start_up
+# app
 
 ## InitEnv
 ```
@@ -26,8 +26,3 @@ Add `Auth::routes();` web.php
 $ docker exec -it db-host bash
 $ mysql -u root -p
 ```
-
-## NextTask
-
-- ヘッドレスCMS
-https://buttercms.com/laravel-cms/
